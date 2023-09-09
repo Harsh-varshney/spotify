@@ -1,0 +1,392 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 290px;
+    border-radius: 1rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color: #121212; 
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+/* navbar */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 95px;
+   
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+/* library */
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option i{
+    font-size: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+}
+
+.icons i{
+    opacity: 0.6;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+/* boxes */
+.box{
+    background-color: #232323;
+    border-radius: 0.85rem;
+    margin: 0.5rem 0 1.25rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.box-p1{
+    font-size: 0.re9m;
+    font-weight: 600;
+}
+
+.box-p2{
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.badge{
+    border: none;
+    border-radius: 2rem;
+    padding: 0.25rem 1rem;
+    height: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+
+.badge:hover{
+    width: 9.2rem;
+}
+
+/*maon content =  sticky nav*/
+.sticky-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    background-color:#121212;
+    z-index: 3;
+}
+
+.sticky-sign i{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+
+.sticky-badge button,i{
+    margin-right: 1rem;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+/* for gyab ho jaye explore premium and > */
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+    #i-hide{
+        display: none;
+    }
+}
+
+/* cards */
+.trend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trend p{
+    font-weight: 500;
+}
+.trend p:hover{
+    text-decoration: underline;
+}
+
+.card{
+    background-color: #251e1e ;
+    width: 187px;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin-left: 0.8rem;
+    margin-top: 1rem;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    border-radius: 0.3rem;
+    width: 190px;
+    height: 190px;
+    background-size: cover;
+}
+
+.card-title{
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.card-info{
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.card:hover{
+    background-color:#292424;
+}
+
+/* main-footer */
+.footer{
+    height: 400px;
+    color: white;=
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    border-bottom: 0.5px solid #474040;
+}
+
+.foot-container a{
+    display: block;
+    font-size: 1rem;
+    color: #A7A7A4;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.foot-container a:hover{
+    text-decoration: underline;
+}
+
+.foot-container p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.foot-icon i{
+    font-size: 1rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+}
+
+.foot-icon i:hover{
+    opacity: 1;
+} 
+
+/* last foot */
+.last-foot{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.last-foot-link a{
+    margin-right: 1rem;
+    color: #A7A7A4;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.last-foot-link a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+/* music player */
+.music-player{
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.albums{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-name{
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.singer{
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.albums img{
+    height: 3.8rem;
+    width: 3.8rem;
+}
+
+.albums i{
+    opacity: 0.7;
+}
+
+.albums i:hover{
+    opacity: 1;
+}
+
+.player{
+    /* background-color: green; */
+    width: 50%;
+}
+
+.controls{
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls img{
+    height: 2rem;
+    width: 18rem;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control i{
+    font-size: 1.3rem;
+    margin-right: 1.8rem;
+    opacity: 0.7;
+}
+
+.player-control i:hover{
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: #535050;
+    cursor: pointer;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;width: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: -6px;
+    box-shadow: -407px 0 0 400px #3aa63a;
+}
